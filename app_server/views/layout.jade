@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    //- set viewport metadata for better display on mobile devices
+    meta(name='viewport', content='width=devicewidth, initial-scale=1.0') 
+    title= title
+    //- include themed bootstrap CSS
+    link(rel='stylesheet', href='/bootstrap/css/styles.css')
+    //-link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    //- bring in jquery as it's needed by bootstrap
+    script(src='/javascripts/jquery.js')
+    //- bring in bootstrap javascript file
+    script(src='bootstrap/js/bootstrap.min.js')
